@@ -17,7 +17,4 @@ cd $WORK_DIR
 echo "[CSTATE-DOCKER] Running hugo build service..."
 hugo
 
-# Copy built files into NGINX directory
-cp -r /$WORK_DIR/public/* /usr/share/nginx/html
-
 echo "[CSTATE-DOCKER] Initalisation complete."

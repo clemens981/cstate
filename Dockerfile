@@ -15,3 +15,4 @@ COPY . /cstate/themes/cstate
 
 # Copy entrypoint script into the container image, this runs everytime the container cold-starts.
 COPY ./docker/entrypoint.sh /docker-entrypoint.d/10-build-hugo.sh
+COPY ./docker/nginx.conf /etc/nginx/nginx.conf
